@@ -1,0 +1,18 @@
+# Contoh konfigurasi jika memilih workflow Wrangler.
+# Untuk Pages via Git, atur binding D1/R2 dan variables di Dashboard.
+name = "dapur-kita"
+compatibility_date = "2026-10-21"
+pages_build_output_dir = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "dapur-kita-db"
+database_id = "GANTI_DENGAN_DATABASE_ID"
+
+[[r2_buckets]]
+binding = "MENU_IMAGES"
+bucket_name = "dapur-kita-images"
+
+[vars]
+MENU_IMAGE_BASE_URL = "https://images.domainkamu.com"
+WHATSAPP_API_VERSION = "v23.0"
